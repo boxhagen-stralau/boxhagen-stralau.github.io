@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PTZOptics</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <h1>PTZOptics</h1>
+    <p></p>
+    
+    <header>
+      <nav>
+        <button type="button">Camera 5</button>
+        <button type="button">Camera 6</button>
+        <button type="button">Camera 7</button>
+        <button type="button">Settings</button>
+      </nav>
+    </header>
+    
+    <p><input type="checkbox" name="set_presets">Set Preset</input></p>
+    
+    <section>
+      <article class="active_cam">
+        <div class="wrapper">
+          <div><figure><img src="images/1.png" alt=""></figure><input type="search" value="1" /></div>
+          <div><figure><img src="images/2.png" alt=""></figure><input type="search" value="2" /></div>
+          <div><figure><img src="images/3.png" alt=""></figure><input type="search" value="3" /></div>
+          <div><figure><img src="images/4.png" alt=""></figure><input type="search" value="4" /></div>
+          <div><figure><img src="images/5.png" alt=""></figure><input type="search" value="5" /></div>
+          <div><figure><img src="images/6.png" alt=""></figure><input type="search" value="6" /></div>
+          <div><figure><img src="images/7.png" alt=""></figure><input type="search" value="7" /></div>
+          <div><figure><img src="images/8.png" alt=""></figure><input type="search" value="8" /></div>
+          <div><figure><img src="images/9.png" alt=""></figure><input type="search" value="9" /></div>
+        </div>
+      </article>
+      
+      <article class="">
+        <div class="wrapper">
+          <div><figure><img src="images/1.png" alt=""></figure><input type="search" value="1" /></div>
+          <div><figure><img src="images/2.png" alt=""></figure><input type="search" value="2" /></div>
+          <div><figure><img src="images/3.png" alt=""></figure><input type="search" value="3" /></div>
+          <div><figure><img src="images/4.png" alt=""></figure><input type="search" value="4" /></div>
+          <div><figure><img src="images/5.png" alt=""></figure><input type="search" value="5" /></div>
+          <div><figure><img src="images/6.png" alt=""></figure><input type="search" value="6" /></div>
+          <div><figure><img src="images/7.png" alt=""></figure><input type="search" value="7" /></div>
+          <div><figure><img src="images/8.png" alt=""></figure><input type="search" value="8" /></div>
+          <div><figure><img src="images/9.png" alt=""></figure><input type="search" value="9" /></div>
+        </div>
+      </article>
+      
+      <article class="">
+        <div class="wrapper">
+          <div><figure><img src="images/1.png" alt=""></figure><input type="search" value="1" /></div>
+          <div><figure><img src="images/2.png" alt=""></figure><input type="search" value="2" /></div>
+          <div><figure><img src="images/3.png" alt=""></figure><input type="search" value="3" /></div>
+          <div><figure><img src="images/4.png" alt=""></figure><input type="search" value="4" /></div>
+          <div><figure><img src="images/5.png" alt=""></figure><input type="search" value="5" /></div>
+          <div><figure><img src="images/6.png" alt=""></figure><input type="search" value="6" /></div>
+          <div><figure><img src="images/7.png" alt=""></figure><input type="search" value="7" /></div>
+          <div><figure><img src="images/8.png" alt=""></figure><input type="search" value="8" /></div>
+          <div><figure><img src="images/9.png" alt=""></figure><input type="search" value="9" /></div>
+        </div>
+      </article>
+      
+      <article class="">
+        <div>
+          <button type="button" id="deleteDatabase">Reset All</button>
+        </div>
+        <p></p>
+        <div>
+          <button type="button" id="deleteImages">Delete your Images</button>
+        </div>
+        <div class="settings">
+          <div id="ptz_owner_id">PTZOptics Name</div>
+          <input type="search" value="PTZ_1" id="ptz_owner">
+          <div></div><div></div>
+          
+          <div>Name</div>
+          <div>IP Address</div>
+          <div>Start</div>
+          <div>Presets (1 to 89 or 100 to 254)</div>
+          
+          <label for="cam_ip_0">Camera 5</label>
+          <input type="search" id="cam_ip_0">
+          <input type="search" id="cam_preset_0">
+          <div class="cam_preset_0"></div>
+          
+          <label for="cam_ip_1">Camera 6</label>
+          <input type="search" id="cam_ip_1">
+          <input type="search" id="cam_preset_1">
+          <div class="cam_preset_1"></div>
+          
+          <label for="cam_ip_2">Camera 7</label>
+          <input type="search" id="cam_ip_2">
+          <input type="search" id="cam_preset_2">
+          <div class="cam_preset_2"></div>
+          
+          <div>Status</div>
+          <div id="status_1"></div>
+          <div id="status_2"></div>
+          <div id="status_3"></div>
+        </div>
+        
+      </article>
+    </section>
+    
+    
+    <script src="scripts/main.js"></script>
+    <script src="scripts/storeimage.js"></script>
+  </body>
+</html>

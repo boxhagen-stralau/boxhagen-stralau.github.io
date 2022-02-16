@@ -1,0 +1,78 @@
+/* https://web.dev/building-a-tabs-component/ */
+
+button {
+  font-size: 18px;
+  line-height: 1.5;
+  min-width: 15%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 50px;
+  border: 1px solid black;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 265px 265px 265px;
+  gap: 20px;
+}
+
+.wrapper > div {
+  background-color: rebeccapurple;
+  border-radius: .5em;
+  text-align: center;
+}
+
+img, figure {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.wrapper > div > input {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.active {
+  border: 5px solid red;
+}
+
+article {
+  display: none;
+}
+
+.active_cam {
+  display: block;
+}
+
+.active_button {
+  background-color: orange;
+}
+
+.settings {
+  display: grid;
+  grid-template-columns: 140px 200px 100px 200px;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.settings > div > input,
+.settings > div > label {
+  font-size: 18px;
+}

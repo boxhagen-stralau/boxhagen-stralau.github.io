@@ -5,7 +5,7 @@ This OBS plugin is a custom browser dock written in html and JavaScript. It was 
 Preview:
 https://boxhagen-stralau.github.io/PTZ_1
 
-Select button with Camera 5, 6 or 7.
+Select button with Camera 5, 6, 7 or 8.
 
 Recall or set a preset on a camera.
 - Click on an image to recall a preset.
@@ -16,7 +16,7 @@ Recall or set a preset on a camera.
 Select button Settings.
 - Optional: enter PTZOptics Name that is displayed in the header.
 
-For each camera 5, 6 and 7.
+For each camera 5, 6, 7 and 8.
 - Camera IP Address
 - Start preset, for example 10. Presets are in range 1 to 89 or 100 to 254.
 - The Presets that are used based on the start value, for example 10 - 18.

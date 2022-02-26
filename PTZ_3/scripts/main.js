@@ -2,9 +2,11 @@ let config = {
   cam_ip_0: "192.168.1.73",
   cam_ip_1: "192.168.1.73",
   cam_ip_2: "192.168.1.73",
+  cam_ip_3: "192.168.1.73",
   cam_preset_0: 10,
   cam_preset_1: 10,
   cam_preset_2: 10,
+  cam_preset_3: 10,
 };
 
 console.log(document.currentScript.baseURI)
@@ -23,7 +25,7 @@ clickButton.addEventListener('click', selectCam);
 
 const button = document.querySelectorAll('button');
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 5; i++) {
   button[i].id = "cam_"+ i;
 }
 button[0].classList.add('active_button');
@@ -157,13 +159,13 @@ function runAction(url, ip, action, positionnum) {
   xhr.open("GET", url);
   xhr.onload = function() {
     console.log("runAction", this.status, ip, action, positionnum);
-    document.querySelector('#status_1').textContent = ip + " - "+ this.status;
+    document.querySelector('#status_1').textContent = `${ip} - ${this.status} ${this.statusText}`;
     document.querySelector('#status_2').textContent = action;
     document.querySelector('#status_3').textContent = positionnum;
   }
   xhr.onerror = function() {
     console.log("runAction", this.status, ip, action, positionnum);
-    document.querySelector('#status_1').textContent = ip + " - "+ this.status;
+    document.querySelector('#status_1').textContent = `${ip} - ${this.status} ${this.statusText}`;
     document.querySelector('#status_2').textContent = action;
     document.querySelector('#status_3').textContent = positionnum;
   }

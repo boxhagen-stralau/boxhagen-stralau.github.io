@@ -273,9 +273,11 @@ function loadSettings(settings) {
 }
 
 function setConfigPreset() {
-  const preset = document.querySelectorAll('figure'); // preset_0..26
-  camoffset = [ config.cam_preset_0, config.cam_preset_1, config.cam_preset_2 ];
-  camip = [ config.cam_ip_0, config.cam_ip_1, config.cam_ip_2 ]
+  const preset = document.querySelectorAll('figure'); // preset_0..26 + 27..29
+  camoffset = [ config.cam_preset_0, config.cam_preset_1,
+                config.cam_preset_2, config.cam_preset_3 ];
+  camip = [ config.cam_ip_0, config.cam_ip_1,
+            config.cam_ip_2, config.cam_ip_3 ]
   let j = 0;
   let k = 0;
   for (let i = 0; i < preset.length; i++) {

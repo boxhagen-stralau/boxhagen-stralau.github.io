@@ -17,7 +17,7 @@ Select button Settings.
 - Optional: enter PTZOptics Name that is displayed in the header.
 
 For each camera 5, 6, 7 and 8.
-- Camera IP Address
+- Camera IP Address (starting with localhost:8080/ip when using proxy)
 - Start preset, for example 10. Presets are in range 1 to 89 or 100 to 254.
 - The Presets that are used based on the start value, for example 10 - 18.
 
@@ -57,3 +57,13 @@ The plugin requires a local proxy running to forward all requests to the the cam
 - On macOS copy the `Proxy.App` from the `proxy` directory to `/Applications`. 
 - Download the `proxy-darwin-amd64` binary and copy to `/Applications/Proxy.app/Contents/MacOS` directory
 - In OBS add the `proxy.lua` to scripts
+
+## Troubleshooting
+
+Start OBS with parameter `--remote-debugging-port=9222`
+
+```
+/Applications/OBS.app/Contents/MacOS/obs --remote-debugging-port=9222
+```
+
+and open Chrome browser on `http://localhost:9222`

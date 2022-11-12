@@ -49,3 +49,11 @@ Reference:
 https://ptzoptics.com/developer-portal/
 
 HTTP-CGI Control
+
+## Add proxy
+
+The plugin requires a local proxy running to forward all requests to the the cameras. This is a security restriction within all browsers because the plugin runs on localhost.
+
+- On macOS copy the `Proxy.App` from the `proxy` directory to `/Applications`. 
+- Download the `proxy-darwin-amd64` binary and copy to `/Applications/Proxy.app/Contents/MacOS` directory
+- In OBS add the `proxy.lua` to scripts

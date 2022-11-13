@@ -56,6 +56,7 @@ The plugin requires a local proxy running to forward all requests to the the cam
 
 - On macOS copy the `Proxy.App` from the `proxy` directory to `/Applications`. 
 - Download the `proxy-darwin-amd64` binary and copy to `/Applications/Proxy.app/Contents/MacOS` directory
+- Run `chmod +x /Applications/Proxy.app/Contents/MacOS/proxy-darwin-amd64` in Terminal to make `proxy-darwin-amd64` executable
 - In OBS add the `proxy.lua` to scripts
 
 ## Troubleshooting
